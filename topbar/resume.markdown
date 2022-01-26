@@ -11,6 +11,58 @@ title: "My Résumé"
         flex: 1;
         white-space: nowrap;
     }
+
+    .grid-job {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+    }
+    .job {
+        grid-column: 1;
+        grid-row:  1;
+    }
+    .time {
+        grid-column: 2;
+        grid-row: 1;
+        text-align: right;
+        color:#666666;
+        font-size: 14px;
+    }
+
+    @media (max-width: 700px) {
+        .grid-container {
+            display: grid;
+            justify-items: center;
+        }
+        .item-1 {
+            grid-column:  2; 
+            grid-row:  2;
+        }
+        .item-2 {
+            grid-column: 2;
+            grid-row: 1;
+        }
+        .item-3 {
+            grid-column: 2;
+            grid-row: 3;
+            text-align: center;
+        }
+
+        .grid-job {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        .job {
+            grid-column: 1;
+            grid-row:  1;
+        }
+        .time {
+            grid-column: 1;
+            grid-row: 2;
+            text-align: left;
+            color:#666666;
+            font-size: 14px;
+        }
+    }
 </style>
 
 <center><h2 style="color:#3D03AA">Hailey Skoglund</h2></center>
@@ -25,15 +77,17 @@ title: "My Résumé"
 
 <h3 style="color:#3D03AA">🎓Education</h3>
 
-<div class="container">
-   <div class="column column-one" style="text-align: left;"><b style="color:#3D03AA">Florida Polytechnic University</b> | Lakeland, FL</div>
-   <div class="column column-two" style="text-align: right;font-size: 14px; color:#666666;">Aug 2019 - May 2022</div>
-</div>
-<div class="container">
-   <div class="column column-one" style="text-align: left;">
-    <em>BS in Business Analytics with Quantitative Economics & Econometrics</em>
-</div>
-   <div class="column column-two" style="text-align: right;font-size: 14px;color:#666666;">GPA: 3.96/4.00</div>
+<div class="grid-job">
+   <div class="job">
+        <span><b style="color:#3D03AA">Florida Polytechnic University</b> | Lakeland, FL</span>
+        <br>
+        <span><em>BS in Business Analytics with Quantitative Economics & Econometrics</em></span>
+    </div>
+    <div class="time">
+        <span>Aug 2019 - May 2022</span>
+        <br>
+        <span>GPA: 3.96/4.00</span>
+    </div>
 </div>
 
 <p style="font-size: 14px; color:#666666;text-indent: -1.5em; padding-left: 1.5em;">Coursework:
@@ -47,15 +101,17 @@ title: "My Résumé"
     Quantitative Research Methods.
 </p>
 
-<div class="container">
-   <div class="column column-one" style="text-align: left;"><b style="color:#3D03AA">Pasco-Hernando State College</b> | Spring Hill, FL</div>
-   <div class="column column-two" style="text-align: right;font-size: 14px; color:#666666;">Aug 2019 - May 2022</div>
-</div>
-<div class="container">
-   <div class="column column-one" style="text-align: left;">
-    <em>Associates in Arts</em>
-</div>
-   <div class="column column-two" style="text-align: right;font-size: 14px; color:#666666;">GPA: 4.00/4.00</div>
+<div class="grid-job">
+   <div class="job">
+        <span><b style="color:#3D03AA">Pasco-Hernando State College</b> | Spring Hill, FL</span>
+        <br>
+        <span><em>Associates in Arts</em></span>
+    </div>
+    <div class="time">
+        <span>Aug 2015 - May 2019</span>
+        <br>
+        <span>GPA: 4.00/4.00</span>
+    </div>
 </div>
 
 
@@ -84,10 +140,11 @@ title: "My Résumé"
     <li>🤷🏼‍♀️</li>
     </ul>
 -->
-
-<div class="container">
-   <div class="column column-one" style="text-align: left;"><b style="color:#3D03AA">Electronic Data Interchange (EDI) Configuration Intern </b> | PlanSource</div>
-   <div class="column column-two" style="text-align: right;font-size: 14px; color:#666666;">June 2021 - Aug 2021</div>
+<div class="grid-job">
+   <div class="job">
+        <b style="color:#3D03AA">Electronic Data Interchange (EDI) Configuration Intern </b> | PlanSource
+    </div>
+    <div class="time">June 2021 - Aug 2021</div>
 </div>
 
 <ul style="font-size: 14px; color:#666666;">
@@ -96,9 +153,11 @@ title: "My Résumé"
     <li>Developed and <b>analyzed new systems</b> for clients, to establish <b>communication</b> with customers and partners.</li>
 </ul>
 
-<div class="container">
-   <div class="column column-one" style="text-align: left;"><b style="color:#3D03AA">Tutor </b> | Pasco-Hernando State College</div>
-   <div class="column column-two" style="text-align: right;font-size: 14px; color:#666666;">Mar 2021 - Jan 2022</div>
+<div class="grid-job">
+   <div class="job">
+        <b style="color:#3D03AA">Tutor </b> | Pasco-Hernando State College
+    </div>
+    <div class="time">Mar 2021 - Jan 2022</div>
 </div>
 
 <ul style="font-size: 14px; color:#666666;">
@@ -109,15 +168,13 @@ title: "My Résumé"
 
 <h3 style="color:#3D03AA">📊Projects</h3>
 
-<div class="container">
-   <div class="column column-one" style="text-align: left;"><b style="color:#3D03AA">Disney Data Analysis</b></div>
-   <div class="column column-two" style="text-align: right;font-size: 14px; color:#666666;">Mar 2020 - May 2020</div>
-</div>
-
-<div class="container">
-   <div class="column column-one" style="text-align: left;">
-    <em>Statistical Programming Techniques in RStudio</em>
-</div>
+<div class="grid-job">
+   <div class="job">
+        <span><b style="color:#3D03AA">Disney Data Analysis</b></span>
+        <br>
+        <span><em>Statistical Programming Techniques in RStudio</em></span>
+    </div>
+    <div class="time">Mar 2020 - May 2020</div>
 </div>
 
 <ul style="font-size: 14px; color:#666666;">
@@ -126,15 +183,13 @@ title: "My Résumé"
     <li>The best time to visit <b>Epcot</b> is on a <b>Wednesday</b> in <b>September</b>!</li>
 </ul>
 
-<div class="container">
-   <div class="column column-one" style="text-align: left;"><b style="color:#3D03AA">Correlating Patient Feedback to Avoidable Readmissions</b></div>
-   <div class="column column-two" style="text-align: right;font-size: 14px; color:#666666;">Oct 2021 - Apr 2022</div>
-</div>
-
-<div class="container">
-   <div class="column column-one" style="text-align: left;">
-    <em>Data Analysis for Tallahassee Memorial Heathcare</em>
-</div>
+<div class="grid-job">
+   <div class="job">
+        <span><b style="color:#3D03AA">Correlating Patient Feedback to Avoidable Readmissions</b></span>
+        <br>
+        <span><em>Data Analysis for Tallahassee Memorial Heathcare</em></span>
+    </div>
+    <div class="time">Oct 2021 - Apr 2022</div>
 </div>
 
 <ul style="font-size: 14px; color:#666666;">
@@ -156,28 +211,36 @@ title: "My Résumé"
 
 <h3 style="color:#3D03AA">♥Volunteer and Leadership Experience</h3>
 
-<div class="container">
-   <div class="column column-one" style="text-align: left;"><b style="color:#3D03AA">Presidential Ambassador</b> | Florida Polytechnic University</div>
-   <div class="column column-two" style="text-align: right;font-size: 14px; color:#666666;">Jan 2020 - Present</div>
+<div class="grid-job">
+   <div class="job">
+        <b style="color:#3D03AA">Presidential Ambassador</b> | Florida Polytechnic University
+    </div>
+    <div class="time">Jan 2020 - Present</div>
 </div>
 <ul style="font-size: 14px; color:#666666;">
     <li>Program that develops <b>servant leadership</b> skills by equipping ambassadors with mentors,
     <b>communication skills</b>, and real-world experiences enabling them to pave the future of the University.</li>
 </ul>
 
-<div class="container">
-   <div class="column column-one" style="text-align: left;"><b style="color:#3D03AA">Board Director</b> | Florida Polytechnic University Foundation Board</div>
-   <div class="column column-two" style="text-align: right;font-size: 14px; color:#666666;">Sep 2020 - Present</div>
+<div class="grid-job">
+   <div class="job">
+        <b style="color:#3D03AA">Board Director</b> | Florida Polytechnic University Foundation Board
+    </div>
+    <div class="time">Sep 2020 - Present</div>
 </div>
+
 <ul style="font-size: 14px; color:#666666;">
     <li>Encourage, solicit, receive, and <b>administer donations</b> for <b>scientific</b>, <b>educational</b> and <b>charitable</b> purposes for the
     advancement of Florida Polytechnic University and its objectives.</li>
 </ul>
 
-<div class="container">
-   <div class="column column-one" style="text-align: left;"><b style="color:#3D03AA">Chief Justice</b> | Florida Polytechnic University Student Government Association</div>
-   <div class="column column-two" style="text-align: right;font-size: 14px; color:#666666;">Mar 2021 – Present</div>
+<div class="grid-job">
+   <div class="job">
+        <b style="color:#3D03AA">Chief Justice</b> | Florida Polytechnic University Student Government Association
+    </div>
+    <div class="time">Mar 2021 – Present</div>
 </div>
+
 <ul style="font-size: 14px; color:#666666;">
     <li><b>Leadership</b> role in supreme court in Florida Polytechnic University’s <b>Student Government Association</b>.</li>
     <li>The <b>Student Supreme Court</b> hears student concerns, helps conduct all SGA elections and holds trials for officials who breach the <b>SGA Constitution</b>.</li>
