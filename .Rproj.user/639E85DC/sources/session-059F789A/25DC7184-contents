@@ -1,0 +1,28 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Hailey Skoglund's Website"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: resume.qmd
+        text: My Résumé
+      - href: contact.qmd
+        text: Contact Me
+    right:
+      - href: https://www.linkedin.com/in/haileyskoglund/
+        icon: linkedin
+      - href: https://www.github.com/haileyskoglund
+        icon: github
+
+format:
+  html:
+    theme: pulse
+    css: styles.css
+    toc: true
+
+
+

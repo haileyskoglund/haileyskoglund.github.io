@@ -1,0 +1,12 @@
+---
+title: "About Me"
+---
+
+<center><img src="/assets/hailey_skoglund.jpg" style="max-height: 315px;" />
+</center>
+<br>
+Data has stories to tell — stories that will not only engage, inform, surprise, delight, and impact their audience, but that will also deliver on measurable business goals. That’s where I come in!
+
+My name is Hailey Skoglund and I am a senior majoring in Business Analytics with a focus in Quantitative Economics and Econometrics at Florida Polytechnic University. I work as a Pricing Analyst Intern at The Walt Disney Company where it is my job to analyze data from the Disney parks to draw powerful insights and help Disney make more informed business decisions.
+
+In the future, I plan to continue my education to earn a Masters degree in Computer Science with a focus in Data Science, grow in my career at The Walt Disney Company, and pursue a J.D. in Intellectual Property Law.
